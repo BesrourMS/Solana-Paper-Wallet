@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Solana Paper Wallet</title>
+  <link rel='stylesheet' href='https://unpkg.com/papercss@1.8.2/dist/paper.min.css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container-sm">
+	<div class="row">
+		<div class="col-12 col">
+			<h3>Solana Paper Wallet</h3>
+		</div>
+		<div class="col-6 col">
+			<div class="card">
+				<div class="card-body">
+					<h4 class="card-title">Public Key</h4>
+					<h5 class="card-subtitle"><span></span></h5>
+					<h4 class="card-title">Private Key</h4>
+					<h5 class="card-subtitle"><span></span></h5>
+				</div>
+				<div class="row">
+					<div class="col-6 col">
+						<div class="image-bottom" id="qrcode-public"></div>
+					</div>
+					<div class="col-6 col">
+						<div class="image-bottom" id="qrcode-private"></div>
+					</div>
+				</div>
+				<button id="printPageButton" onclick="window.print()" class="btn-block btn-secondary-outline">Print</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src='https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js'></script>
+<script src='https://unpkg.com/base-58@0.0.1/Base58.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js'></script>
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+@media print {
+  #printPageButton {
+    display: none;
+  }
+}
+
+.image-bottom{
+	text-align: -webkit-center;
+    padding-bottom: 15px;
+}

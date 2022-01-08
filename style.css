@@ -1,10 +1,40 @@
 @media print {
-  #printPageButton {
+  #printPageButton, .col-12 {
     display: none;
+  }
+  body {
+    -webkit-print-color-adjust: exact;
+    -moz-print-color-adjust: exact;
+    -ms-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 }
 
 .image-bottom{
 	text-align: -webkit-center;
-    padding-bottom: 15px;
+}
+
+#printPageButton {
+	background: rgb(153,69,255);
+	background: linear-gradient(45deg, rgba(153,69,255,1) 0%, rgba(20,241,149,1) 100%);
+}
+
+img{
+	background-color: black;
+}
+
+body > div > div > div.col-6.col > div > div.card-body > h5:nth-child(2) > span{
+	color: #9945FF;
+}
+
+body > div > div > div.col-6.col > div > div.card-body > h5:nth-child(4) > span{
+	color: #14F195;
+}
+
+body > div > div > div.col-6.col > div > div.row > div:nth-child(1){
+	background-color: #9945FF;
+}
+
+body > div > div > div.col-6.col > div > div.row > div:nth-child(2){
+	background-color: #14F195;
 }
